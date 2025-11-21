@@ -28,7 +28,7 @@ const uint8_t STBY = 6;
 
 // *** CHANGE THESE BEFORE EACH RUN ***
 // Set your assigned team color: "RED", "BLUE", or "GREEN"
-String ASSIGNED_TEAM_COLOR = "BLUE";
+String ASSIGNED_TEAM_COLOR = "RED";
 
 // Set your terrain difficulty choice: "PINK" (Easy), "BLUE" (Moderate), or "YELLOW" (Severe)
 String TERRAIN_DIFFICULTY = "BLUE";
@@ -109,14 +109,14 @@ void pivotRight(uint8_t l, uint8_t r){
 String detectColor(float r, float g, float b) {
 
   //CHANGE CODE
-  if ((r >= 100 && r <= 120) && (g >= 75 && g <= 90) && (b >= 60 && b <= 75)) return "BLACK"; // low
-  if ((r >= 95 && r <= 110) && (g >= 80 && g <= 95) && (b >= 50 && b <= 70)) return "WHITE"; // low
-  if ((r >= 130 && r <= 145) && (g >= 60 && g <= 75) && (b >= 50 && b <= 65)) return "PINK"; // low
-  if ((r >= 110 && r <= 175) && (g >= 50 && g <= 65) && (b >= 40 && b <= 55))   return "RED"; // low
-  if ((r >= 110 && r <= 140) && (g >= 80  && g <= 115) && (b >= 30 && b <= 50))  return "YELLOW"; // low
-  if ((r >= 70  && r <= 90) && (g >= 100 && g <= 140) && (b >= 55 && b <= 70))  return "GREEN"; // low
-  if ((r >= 70  && r <= 110) && (g >= 70  && g <= 110) && (b >= 65 && b <= 120)) return "BLUE"; // low
-  if ((r >= 120 && r <= 160) && (g >= 65  && g <= 85)  && (b >= 25 && b <= 55)) return "ORANGE"; // low
+  if ((r >= 100 && r <= 120) && (g >= 75 && g <= 95) && (b >= 60 && b <= 75)) return "BLACK"; // low
+  if ((r >= 95 && r <= 110) && (g >= 85 && g <= 95) && (b >= 50 && b <= 70)) return "WHITE"; // low
+  if ((r >= 150 && r <= 170) && (g >= 55 && g <= 70) && (b >= 50 && b <= 65)) return "PINK"; // low
+  if ((r >= 150 && r <= 180) && (g >= 45 && g <= 60) && (b >= 40 && b <= 55))   return "RED"; // low
+  if ((r >= 115 && r <= 130) && (g >= 85  && g <= 100) && (b >= 30 && b <= 45))  return "YELLOW"; // low
+  if ((r >= 95  && r <= 115) && (g >= 85 && g <= 110) && (b >= 60 && b <= 75))  return "GREEN"; // low
+  if ((r >= 75  && r <= 100) && (g >= 75  && g <= 100) && (b >= 85 && b <= 110)) return "BLUE"; // low
+  if ((r >= 150 && r <= 165) && (g >= 60  && g <= 70)  && (b >= 30 && b <= 50)) return "ORANGE"; // low
   return "UNKNOWN";
 
 }
